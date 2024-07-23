@@ -5,25 +5,29 @@ the raw generated data are converted to the numpy arrays and they are shown as f
 
 <table>
   <tr>
-    <td><img src="Camera/Color_Image.png" alt="Image 1" style="width: 100%;"/></td>
-    <td><img src="Camera/Depth_Image.png" alt="Image 2" style="width: 100%;"/></td>
+    <td><img src="Camera/Color_Image.png" alt="Raw Color Image" style="width: 100%;"/></td>
+    <td><img src="Camera/Depth_Image.png" alt="Raw Depth Image" style="width: 100%;"/></td>
   </tr>
 </table>
 
-![alt-text-1](Camera/Color_Image.png "Raw Color RGB Image") ![alt-text-2](Camera/Depth_Image.png "Raw Depth Image")
 
-![alt text](Camera/Blurred_Image.png "Blurred Image")
+<table>
+  <tr>
+    <td><img src="Camera/Blurred_Image.png" alt="Blurred Image" style="width: 100%;"/></td>
+    <td><img src="Camera/hsv_Image.png" alt="HSV Image" style="width: 100%;"/></td>
+    <td><img src="Camera/mask_yellow_Image.png" alt="Mask Yellow Image" style="width: 100%;"/></td>
+  </tr>
+</table>
 
-![alt text](Camera/hsv_Image.png "HSV Image")
 
-![alt text](Camera/mask_yellow_Image.png "Mask Yellow Image")
-
-![alt text](Camera/Disparity_Image.png "Disparity Image")
-
-![alt text](Camera/Spatial_Filtered_Image.png "Spatial Filtered Image")
-
-![alt text](Camera/Temporal_Filtered_Image.png "Temporal Filtered Image")
-
-![alt text](Camera/Depth_Filtered_Image.png "Depth Filtered Image")
-
-![alt text](Camera/Hole_Filled_Image.png "Hole Filled Image")
+<table>
+  <tr>
+    <td><img src="Camera/Disparity_Image.png" alt="Disparity Image" style="width: 100%;"/></td>
+    <td><img src="Camera/Spatial_Filtered_Image.png" alt="Spatial Filtered Image" style="width: 100%;"/></td>
+    <td><img src="Camera/Temporal_Filtered_Image.png" alt="Temporal Filtered Image" style="width: 100%;"/></td>
+  </tr>
+  <tr>
+    <td><img src="Camera/Depth_Filtered_Image.png" alt="Depth Filtered Image" style="width: 100%;"/></td>
+    <td><img src="Camera/Hole_Filled_Image.png" alt="Hole Filled Image" style="width: 100%;"/></td>
+  </tr>
+</table>
