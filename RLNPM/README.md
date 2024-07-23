@@ -4,7 +4,7 @@ The ball is detected through the rgbd camera and Depth and Color streams are gen
 the raw generated data are converted to the numpy arrays and they are shown as follows through the opencv library:
 
 Inline-style: 
-![alt text](https://github.com/Afshin1997/Afshin1997.github.io/blob/main/RLNPM/Camera/Color_Image.png "Raw Color RGB Image")
+![alt text](Camera/Color_Image.png "Raw Color RGB Image")
 
 Inline-style: 
 ![alt text](https://github.com/Afshin1997/Afshin1997.github.io/blob/main/RLNPM/Camera/Depth_Image.png "Raw Depth Image")
