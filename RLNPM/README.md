@@ -1,7 +1,6 @@
 # Ball Detection, Pose and Velocity Detection
 
-The ball is detected through the rgbd camera and Depth and Color streams are generated. 
-the raw generated data are converted to the numpy arrays and they are shown as follows through the opencv library:
+The ball is detected through the RGBD camera, and depth and color streams are generated. The raw generated data are converted to numpy arrays and are shown as follows through the OpenCV library:
 
 <table>
   <tr>
@@ -10,7 +9,8 @@ the raw generated data are converted to the numpy arrays and they are shown as f
   </tr>
 </table>
 
-The following processings are done on the RGB image:
+The following processes are performed on the RGB image:
+
 <table>
   <tr>
     <td><img src="Camera/Blurred_Image.png" alt="Blurred Image" style="width: 100%;"/></td>
@@ -19,7 +19,8 @@ The following processings are done on the RGB image:
   </tr>
 </table>
 
-and the following filters are applied to the Depth Images to have a noiseless information of the position of the ball in 3D Environments.
+The following filters are applied to the depth images to obtain noiseless information about the position of the ball in 3D environments.
+
 <table>
   <tr>
     <td><img src="Camera/Disparity_Image.png" alt="Disparity Image" style="width: 100%;"/></td>
@@ -32,6 +33,6 @@ and the following filters are applied to the Depth Images to have a noiseless in
   </tr>
 </table>
 
-the positions can be detected correctly in $mm$ in 3D.
+The positions can be detected correctly in millimeters ($mm$) in 3D.
 
-thereafter, a kalman filter is applied to estimated the postion of the ball while there are no information from the camera that could be fed into the network. so during those periods, the data from kalman filter will be fed to the network and once some data are derived from camera, the Kalman Filter Will be updated.
+Thereafter, a Kalman filter is applied to estimate the position of the ball when there is no information from the camera that could be fed into the network. During these periods, the data from the Kalman filter will be fed to the network, and once some data are derived from the camera, the Kalman filter will be updated.
