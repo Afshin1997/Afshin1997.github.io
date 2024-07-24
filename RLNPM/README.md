@@ -37,6 +37,7 @@ The positions can be detected correctly in millimeters ($mm$) in 3D.
 
 Thereafter, a Kalman filter is applied to estimate the position of the ball when there is no information from the camera that could be fed into the network. During these periods, the data from the Kalman filter will be fed to the network, and once some data are derived from the camera, the Kalman filter will be updated.
 
+# RL Algorithm
 <table>
   <tr>
     <td><img src="RLAlgorithm/agent_diagrame.png" alt="Raw Color Image" style="width: 100%;"/></td>
