@@ -46,3 +46,13 @@ Thereafter, a Kalman filter is applied to estimate the position of the ball when
 As illustrated in the figure, each individual agent collects data from its environment, and the collected data from all the environments is gathered in a buffer called a trajectory. Then the trajectory is split into mini-batches, which can be determined by the user.
 
 Thereafter, each mini-batch is fed to the networks sequentially, and for each mini-batch, the networks are updated a number of times as defined by the *number of training epochs*. 
+
+Moreover, the following parameters are randomized during training and the randomizitation is done at the beginning of each iteration:
+
+- Static and Dynamic friction as well as the restitution of the Manipulator links and the Ball
+- Stiffness and Damping of the joint actuators
+- Lower and Upper Limits of joint positions
+- Mass of the Ball
+- Added noise to the observation space
+- Initial position and velocity of the Ball
+- Initial Joint Angles
