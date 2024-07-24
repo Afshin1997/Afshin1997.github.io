@@ -36,3 +36,13 @@ The following filters are applied to the depth images to obtain noiseless inform
 The positions can be detected correctly in millimeters ($mm$) in 3D.
 
 Thereafter, a Kalman filter is applied to estimate the position of the ball when there is no information from the camera that could be fed into the network. During these periods, the data from the Kalman filter will be fed to the network, and once some data are derived from the camera, the Kalman filter will be updated.
+
+<table>
+  <tr>
+    <td><img src="RLAlgorithm/agent_diagrame.png" alt="Raw Color Image" style="width: 100%;"/></td>
+  </tr>
+</table>
+
+As illustrated in the figure, each individual agent collects data from its environment, and the collected data from all the environments is gathered in a buffer called a trajectory. Then the trajectory is split into mini-batches, which can be determined by the user.
+
+Thereafter, each mini-batch is fed to the networks sequentially, and for each mini-batch, the networks are updated a number of times as defined by the *number of training epochs*. 
