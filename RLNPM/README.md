@@ -16,22 +16,25 @@ The following processes are performed on the RGB image:
     <td>
       <div style="text-align: center;">
         <img src="Camera/Blurred_Image.png" alt="Blurred Image" style="width: 100%;"/>
-        <div>Blurred Image</div>
         <div align="center">
-          my text here.
+          Blurred Image
         </div>
       </div>
     </td>
     <td>
       <div style="text-align: center;">
         <img src="Camera/hsv_Image.png" alt="HSV Image" style="width: 100%;"/>
-        <div>HSV Image</div>
+        <div align="center">
+          HSV Image
+        </div>
       </div>
     </td>
     <td>
       <div style="text-align: center;">
         <img src="Camera/mask_yellow_Image.png" alt="Mask Yellow Image" style="width: 100%;"/>
-        <div>Mask Yellow Image</div>
+        <div align="center">
+          Mask Yellow Image
+        </div>
       </div>
     </td>
   </tr>
