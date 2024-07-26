@@ -16,8 +16,10 @@ The following processes are performed on the RGB image:
     <td>
       <div style="text-align: center;">
         <img src="Camera/Blurred_Image.png" alt="Blurred Image" style="width: 100%;"/>
-        <p style="text-align: center">Hello world</P>
         <div>Blurred Image</div>
+        <div align="center">
+          my text here.
+        </div>
       </div>
     </td>
     <td>
