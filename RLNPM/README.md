@@ -58,7 +58,11 @@ Moreover, the following parameters are randomized during training and the random
 - Initial position and velocity of the Ball
 - Initial Joint Angles
 
-[![Introduction to Project](https://img.youtube.com/vi/WnKFt7gNdNU/0.jpg)](https://www.youtube.com/watch?v=WnKFt7gNdNU)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=WnKFt7gNdNU">
+    <img src="https://img.youtube.com/vi/WnKFt7gNdNU/0.jpg" alt="Introduction to Project">
+  </a>
+</p>
 
 <table>
   <tr>
