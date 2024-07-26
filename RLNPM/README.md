@@ -42,17 +42,53 @@ The following processes are performed on the RGB image:
 
 
 The following filters are applied to the depth images to obtain noiseless information about the position of the ball in 3D environments.
-
 <table>
   <tr>
-    <td><img src="Camera/Disparity_Image.png" alt="Disparity Image" style="width: 100%;"/></td>
-    <td><img src="Camera/Spatial_Filtered_Image.png" alt="Spatial Filtered Image" style="width: 100%;"/></td>
-    <td><img src="Camera/Temporal_Filtered_Image.png" alt="Temporal Filtered Image" style="width: 100%;"/></td>
+    <td>
+      <div style="text-align: center;">
+        <img src="Camera/Disparity_Image.png" alt="Disparity Image" style="width: 100%;"/>
+        <div align="center">
+          Blurred Image
+        </div>
+      </div>
+    </td>
+    <td>
+      <div style="text-align: center;">
+        <img src="Camera/Spatial_Filtered_Image.png" alt="Spatial Filtered Image" style="width: 100%;"/>
+        <div align="center">
+          HSV Image
+        </div>
+      </div>
+    </td>
+    <td>
+      <div style="text-align: center;">
+        <img src="Camera/Temporal_Filtered_Image.png" alt="Temporal Filtered Image" style="width: 100%;"/>
+        <div align="center">
+          Mask Yellow Image
+        </div>
+      </div>
+    </td>
   </tr>
+
   <tr>
-    <td><img src="Camera/Depth_Filtered_Image.png" alt="Depth Filtered Image" style="width: 100%;"/></td>
-    <td><img src="Camera/Hole_Filled_Image.png" alt="Hole Filled Image" style="width: 100%;"/></td>
+    <td>
+      <div style="text-align: center;">
+        <img src="Camera/Depth_Filtered_Image.png" alt="Depth Filtered Image" style="width: 100%;"/>
+        <div align="center">
+          Blurred Image
+        </div>
+      </div>
+    </td>
+    <td>
+      <div style="text-align: center;">
+        <img src="Camera/Hole_Filled_Image.png" alt="Hole Filled Image" style="width: 100%;"/>
+        <div align="center">
+          HSV Image
+        </div>
+      </div>
+    </td>
   </tr>
+  
 </table>
 
 The positions can be detected correctly in millimeters ($mm$) in 3D.
