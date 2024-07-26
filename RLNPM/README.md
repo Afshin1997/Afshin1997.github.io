@@ -57,3 +57,6 @@ Moreover, the following parameters are randomized during training and the random
 - Added noise to the observation space
 - Initial position and velocity of the Ball
 - Initial Joint Angles
+
+[![Introduction to Project](https://img.youtube.com/vi/WnKFt7gNdNU/0.jpg)](https://www.youtube.com/watch?v=WnKFt7gNdNU)
+
