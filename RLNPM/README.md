@@ -60,4 +60,11 @@ Moreover, the following parameters are randomized during training and the random
 
 [![Introduction to Project](https://img.youtube.com/vi/WnKFt7gNdNU/0.jpg)](https://www.youtube.com/watch?v=WnKFt7gNdNU)
 
+<table>
+  <tr>
+    <td><img src="RLAlgorithm/Episode_Length.png" alt="Episode Length at each iteration" style="width: 100%;"/></td>
+    <td><img src="RLAlgorithm/Mean_Reward.png" alt="Mean Reward at each iteration" style="width: 100%;"/></td>
+  </tr>
+</table>
+
 
