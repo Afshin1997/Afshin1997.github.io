@@ -14,26 +14,25 @@ The following processes are performed on the RGB image:
 <table>
   <tr>
     <td>
-      <figure>
+      <figure style="text-align: center;">
         <img src="Camera/Blurred_Image.png" alt="Blurred Image" style="width: 100%;"/>
-        <figcaption>Blurred Image</figcaption>
+        <figcaption style="text-align: center;">Blurred Image</figcaption>
       </figure>
     </td>
     <td>
-      <figure>
+      <figure style="text-align: center;">
         <img src="Camera/hsv_Image.png" alt="HSV Image" style="width: 100%;"/>
-        <figcaption>HSV Image</figcaption>
+        <figcaption style="text-align: center;">HSV Image</figcaption>
       </figure>
     </td>
     <td>
-      <figure>
+      <figure style="text-align: center;">
         <img src="Camera/mask_yellow_Image.png" alt="Mask Yellow Image" style="width: 100%;"/>
-        <figcaption>Mask Yellow Image</figcaption>
+        <figcaption style="text-align: center;">Mask Yellow Image</figcaption>
       </figure>
     </td>
   </tr>
 </table>
-
 
 The following filters are applied to the depth images to obtain noiseless information about the position of the ball in 3D environments.
 
