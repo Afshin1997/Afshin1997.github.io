@@ -48,7 +48,7 @@ The following filters are applied to the depth images to obtain noiseless inform
       <div style="text-align: center;">
         <img src="Camera/Disparity_Image.png" alt="Disparity Image" style="width: 100%;"/>
         <div align="center">
-          Blurred Image
+          Disparity Image
         </div>
       </div>
     </td>
@@ -56,7 +56,7 @@ The following filters are applied to the depth images to obtain noiseless inform
       <div style="text-align: center;">
         <img src="Camera/Spatial_Filtered_Image.png" alt="Spatial Filtered Image" style="width: 100%;"/>
         <div align="center">
-          HSV Image
+          Spatial Filtered Image
         </div>
       </div>
     </td>
@@ -64,7 +64,7 @@ The following filters are applied to the depth images to obtain noiseless inform
       <div style="text-align: center;">
         <img src="Camera/Temporal_Filtered_Image.png" alt="Temporal Filtered Image" style="width: 100%;"/>
         <div align="center">
-          Mask Yellow Image
+          Temporal Filtered Image
         </div>
       </div>
     </td>
@@ -75,7 +75,7 @@ The following filters are applied to the depth images to obtain noiseless inform
       <div style="text-align: center;">
         <img src="Camera/Depth_Filtered_Image.png" alt="Depth Filtered Image" style="width: 100%;"/>
         <div align="center">
-          Blurred Image
+         Depth Filtered Image
         </div>
       </div>
     </td>
@@ -83,13 +83,26 @@ The following filters are applied to the depth images to obtain noiseless inform
       <div style="text-align: center;">
         <img src="Camera/Hole_Filled_Image.png" alt="Hole Filled Image" style="width: 100%;"/>
         <div align="center">
-          HSV Image
+         Hole Filled Image
         </div>
       </div>
     </td>
   </tr>
   
 </table>
+
+### Depth to Disparity Transformation:
+Disparity data shows the horizontal shift between each point in a camera and the corresponding one in the other one
+* It converts the depth data into disparity data.
+### Disparity to Depth Transform
+* It converts back the disparity data into depth data.
+### Spatial Filter
+* It reduces the noise of the depth data by smoothing the area while conserving the edges of the data
+### Temporal Filter
+* It reduces the temporal noise by filtering depth frame over time and getting the average depth data over time.
+### Hole Filling Filter
+* It fills the gaps in the depth data by interpolation the data at those gaps
+
 
 The positions can be detected correctly in millimeters ($mm$) in 3D.
 
