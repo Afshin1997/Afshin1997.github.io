@@ -142,4 +142,12 @@ Moreover, the following parameters are randomized during training and the random
   </tr>
 </table>
 
+In addition to the randomized parameters, the hyperparameters of the reinforcement learning model are changing dynamically at specific iterations. In the following figure, the schedule of two hyperparameters, *Clip parameter* and *Entropy coefficient*, is represented:
+
+<table>
+  <tr>
+    <td><img src="RLAlgorithm/hyperparameters_plot.png" alt="Hyper Parameters" style="width: 100%;"/></td>
+  </tr>
+</table>
+
 
