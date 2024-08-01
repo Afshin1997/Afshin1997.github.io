@@ -150,4 +150,75 @@ In addition to the randomized parameters, the hyperparameters of the reinforceme
   </tr>
 </table>
 
+## Reward Function
 
+
+## reward function
+
+
+the REward function is as follows:
+
+The distance reward is calculated as:
+
+$$d = \|p_e - p_b\|_2$$
+$$r_d = \frac{1}{1 + d^2}$$
+
+where $p_e$ is the end effector position and $p_b$ is the tennis ball position.
+
+## Orientation Reward
+The orientation reward is:
+
+$$r_o = -1.2 \cdot \text{clamp}(z_e \cdot \hat{v_b}, -1, 1)$$
+
+where $z_e$ is the normalized end effector z-axis and $\hat{v_b}$ is the normalized tennis ball velocity.
+
+## Relative Velocity Reward
+$$r_v = \frac{1}{1 + \|v_e - v_b\|_2^2}$$
+$$r_{rv} = r_d \cdot r_v$$
+
+where $v_e$ is the end effector velocity and $v_b$ is the tennis ball velocity.
+
+## End Effector Velocity Penalty
+$$p_v = \|v_e\|_2$$
+
+## Smoothness Penalties
+$$s_l = \|a_e\|_2$$
+$$s_a = \|\alpha_e\|_2$$
+
+where $a_e$ is the end effector linear acceleration and $\alpha_e$ is the angular acceleration.
+
+## Task-specific Rewards
+For different tasks (moving to target, stabilized ball, centralized ball, caught ball), the rewards are scaled differently:
+
+1. Moving to target:
+   $$r_t = 1.0$$
+   $$r_d' = 1.8 \cdot r_d$$
+   $$r_{rv}' = 1.8 \cdot r_{rv}$$
+   $$r_s = 1.6$$
+   $$r_g = 1.8 \cdot (z_e \cdot z)$$
+   $$r_{tp} = \frac{1.8}{1 + 0.1\|p_t - p_j\|_2^2}$$
+   $$r_{vt} = \frac{1}{1 + 0.3p_v^2} \cdot r_{tp}$$
+
+2. Stabilized ball:
+   $$r_t = 0.75$$
+   $$r_d' = 1.6 \cdot r_d$$
+   $$r_{rv}' = 1.6 \cdot r_{rv}$$
+   $$r_s = \frac{1.6}{1 + \|v_b\|_2}$$
+   $$r_g = 1.6 \cdot (z_e \cdot z)$$
+
+3. Centralized ball:
+   $$r_t = 0.5$$
+   $$r_d' = 1.4 \cdot r_d$$
+   $$r_{rv}' = 1.4 \cdot r_{rv}$$
+   $$r_s = \frac{1.4}{1 + \|v_b\|_2}$$
+   $$r_g = 1.4 \cdot (z_e \cdot z)$$
+
+4. Caught ball:
+   $$r_t = 0.25$$
+   $$r_d' = 1.1 \cdot r_d$$
+   $$r_{rv}' = 1.1 \cdot r_{rv}$$
+   $$r_g = 1.1 \cdot (z_e \cdot z)$$
+
+where $p_t$ is the target position, $p_j$ is the joint position, and $z$ is the unit z-vector.
+
+The final reward is a combination of these components, with additional scaling factors applied to penalties and smoothness terms based on the current task.
