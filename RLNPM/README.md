@@ -150,14 +150,13 @@ In addition to the randomized parameters, the hyperparameters of the reinforceme
   </tr>
 </table>
 
-## Reward Function
-
-
 ## reward function
 
+In the following functions, $e$ means end effector and $b$ means ball.
 
-the REward function is as follows:
+the Reward function is as follows:
 
+### Distance reward
 The distance reward is calculated as:
 
 $$d = \|p_e - p_b\|_2$$
@@ -168,7 +167,7 @@ where $p_e$ is the end effector position and $p_b$ is the tennis ball position.
 ## Orientation Reward
 The orientation reward is:
 
-$$r_o = -1.2 \cdot \text{clamp}(z_e \cdot \hat{v_b}, -1, 1)$$
+$$r_o = -\text{clamp}(\hat{z}_e \cdot \hat{v}_b, -1, 1)$$
 
 where $z_e$ is the normalized end effector z-axis and $\hat{v_b}$ is the normalized tennis ball velocity.
 
@@ -219,6 +218,6 @@ For different tasks (moving to target, stabilized ball, centralized ball, caught
    $$r_{rv}' = 1.1 \cdot r_{rv}$$
    $$r_g = 1.1 \cdot (z_e \cdot z)$$
 
-where $p_t$ is the target position, $p_j$ is the joint position, and $z$ is the unit z-vector.
+where $p_t$ is the target joint position, $p_j$ is the current joint position, and $z$ is the unit z-vector.
 
 The final reward is a combination of these components, with additional scaling factors applied to penalties and smoothness terms based on the current task.
