@@ -193,8 +193,8 @@ where $a_e$ is the end effector linear acceleration and $\alpha_e$ is the angula
 For different tasks (moving to target, stabilized ball, centralized ball, caught ball), the rewards are scaled differently:
 
 1. Moving to target:
-   - $$r_t = 1.0$$
-   - $$r_d' = 1.8 \cdot r_d$$
+   - $r_t = 1.0$
+   - $r_d' = 1.8 \cdot r_d$
    - $$r_{rv}' = 1.8 \cdot r_{rv}$$
    - $$r_s = 1.6$$
    - $$r_g = 1.8 \cdot (z_e \cdot z)$$
