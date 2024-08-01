@@ -195,31 +195,31 @@ For different tasks (moving to target, stabilized ball, centralized ball, caught
 1. Moving to target:
    - $r_t = 1.0$
    - $r_d' = 1.8 \cdot r_d$
-   - $$r_{rv}' = 1.8 \cdot r_{rv}$$
-   - $$r_s = 1.6$$
-   - $$r_g = 1.8 \cdot (z_e \cdot z)$$
-   - $$r_{tp} = \frac{1.8}{1 + 0.1\|p_t - p_j\|_2^2}$$
-   - $$r_{vt} = \frac{1}{1 + 0.3p_v^2} \cdot r_{tp}$$
+   - $r_{rv}' = 1.8 \cdot r_{rv}$
+   - $r_s = 1.6$
+   - $r_g = 1.8 \cdot (z_e \cdot z)$
+   - $r_{tp} = \frac{1.8}{1 + 0.1\|p_t - p_j\|_2^2}$
+   - $r_{vt} = \frac{1}{1 + 0.3p_v^2} \cdot r_{tp}$
 
 2. Stabilized ball:
-   $$r_t = 0.75$$
-   $$r_d' = 1.6 \cdot r_d$$
-   $$r_{rv}' = 1.6 \cdot r_{rv}$$
-   $$r_s = \frac{1.6}{1 + \|v_b\|_2}$$
-   $$r_g = 1.6 \cdot (z_e \cdot z)$$
+   - $r_t = 0.75$
+   - $r_d' = 1.6 \cdot r_d$
+   - $r_{rv}' = 1.6 \cdot r_{rv}$
+   - $r_s = \frac{1.6}{1 + \|v_b\|_2}$
+   - $r_g = 1.6 \cdot (z_e \cdot z)$
 
 3. Centralized ball:
-   $$r_t = 0.5$$
-   $$r_d' = 1.4 \cdot r_d$$
-   $$r_{rv}' = 1.4 \cdot r_{rv}$$
-   $$r_s = \frac{1.4}{1 + \|v_b\|_2}$$
-   $$r_g = 1.4 \cdot (z_e \cdot z)$$
+   - $r_t = 0.5$
+   - $r_d' = 1.4 \cdot r_d$
+   - $r_{rv}' = 1.4 \cdot r_{rv}$
+   - $r_s = \frac{1.4}{1 + \|v_b\|_2}$
+   - $r_g = 1.4 \cdot (z_e \cdot z)$
 
 4. Caught ball:
-   $$r_t = 0.25$$
-   $$r_d' = 1.1 \cdot r_d$$
-   $$r_{rv}' = 1.1 \cdot r_{rv}$$
-   $$r_g = 1.1 \cdot (z_e \cdot z)$$
+   - $r_t = 0.25$
+   - $r_d' = 1.1 \cdot r_d$
+   - $r_{rv}' = 1.1 \cdot r_{rv}$
+   - $r_g = 1.1 \cdot (z_e \cdot z)$
 
 where $p_t$ is the target joint position, $p_j$ is the current joint position, and $z$ is the unit z-vector.
 
