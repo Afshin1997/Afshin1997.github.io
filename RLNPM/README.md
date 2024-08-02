@@ -168,12 +168,6 @@ the Reward function is as follows:
   </tr>
 </table>
 
-The distance reward is calculated as:
-
-$$d = \|p_e - p_b\|_2$$
-
-$$r_d = \frac{1}{1 + d^2}$$
-
 where $p_e$ is the end effector position and $p_b$ is the tennis ball position.
 
 ## Orientation Reward
