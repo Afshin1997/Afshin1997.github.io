@@ -202,8 +202,7 @@ where $v_e$ is the end effector velocity and $v_b$ is the tennis ball velocity.
 <table>
   <tr>
     <td>
-      $$r_v = \frac{1}{1 + \|v_e - v_b\|_2^2}$$
-      $$r_{rv} = r_d \cdot r_v$$
+      $$r_{gc} = -\hat{z}_e \cdot \hat{g}$$
     </td>
     <td><img src="RLAlgorithm/gravity_compensation.png" alt="Gravity Compensation Reward" style="width: 70%;"/></td>
   </tr>
