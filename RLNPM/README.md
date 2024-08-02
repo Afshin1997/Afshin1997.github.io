@@ -171,18 +171,67 @@ the Reward function is as follows:
 where $p_e$ is the end effector position and $p_b$ is the tennis ball position.
 
 ## Orientation Reward
-The orientation reward is:
 
-$$r_o = -\text{clamp}(\hat{z}_e \cdot \hat{v}_b, -1, 1)$$
+<table>
+  <tr>
+    <td>
+      $$r_o = -\text{clamp}(\hat{z}_e \cdot \hat{v}_b, -1, 1)$$
+    </td>
+    <td><img src="RLAlgorithm/orientation_reward.png" alt="Orientation Reward" style="width: 70%;"/></td>
+  </tr>
+</table>
 
 where $z_e$ is the normalized end effector z-axis and $\hat{v_b}$ is the normalized tennis ball velocity.
 
 ## Relative Velocity Reward
-$$r_v = \frac{1}{1 + \|v_e - v_b\|_2^2}$$
 
-$$r_{rv} = r_d \cdot r_v$$
+<table>
+  <tr>
+    <td>
+      $$r_v = \frac{1}{1 + \|v_e - v_b\|_2^2}$$
+      $$r_{rv} = r_d \cdot r_v$$
+    </td>
+    <td><img src="RLAlgorithm/relative_velocity_reward.png" alt="Relative Velocity Reward" style="width: 70%;"/></td>
+  </tr>
+</table>
 
 where $v_e$ is the end effector velocity and $v_b$ is the tennis ball velocity.
+
+## Gravity Compensation Reward
+
+<table>
+  <tr>
+    <td>
+      $$r_v = \frac{1}{1 + \|v_e - v_b\|_2^2}$$
+      $$r_{rv} = r_d \cdot r_v$$
+    </td>
+    <td><img src="RLAlgorithm/gravity_compensation.png" alt="Gravity Compensation Reward" style="width: 70%;"/></td>
+  </tr>
+</table>
+
+## Stability Reward
+
+<table>
+  <tr>
+    <td>
+      $$r_v = \frac{1}{1 + \|v_e - v_b\|_2^2}$$
+      $$r_{rv} = r_d \cdot r_v$$
+    </td>
+    <td><img src="RLAlgorithm/Stability_Reward.png" alt="Stability Reward" style="width: 70%;"/></td>
+  </tr>
+</table>
+
+## Task Reward
+
+<table>
+  <tr>
+    <td>
+      $$r_v = \frac{1}{1 + \|v_e - v_b\|_2^2}$$
+      $$r_{rv} = r_d \cdot r_v$$
+    </td>
+    <td><img src="RLAlgorithm/Task_Reward.png" alt="Task Reward" style="width: 70%;"/></td>
+  </tr>
+</table>
 
 ## End Effector Velocity Penalty
 $$p_v = \|v_e\|_2$$
