@@ -164,7 +164,7 @@ the Reward function is as follows:
       $$d = \|p_e - p_b\|_2$$
       $$r_d = \frac{1}{1 + d^2}$$
     </td>
-    <td><img src="RLAlgorithm/Mean_Reward.png" alt="Mean Reward at each iteration" style="width: 100%;"/></td>
+    <td><img src="RLAlgorithm/distance_reward.png" alt="Distance Reward" style="width: 70%;"/></td>
   </tr>
 </table>
 
