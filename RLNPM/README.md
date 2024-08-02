@@ -157,6 +157,17 @@ In the following functions, $e$ means end effector and $b$ means ball.
 the Reward function is as follows:
 
 ### Distance reward
+
+<table>
+  <tr>
+    <td>
+      $$d = \|p_e - p_b\|_2$$
+      $$r_d = \frac{1}{1 + d^2}$$
+    </td>
+    <td><img src="RLAlgorithm/Mean_Reward.png" alt="Mean Reward at each iteration" style="width: 100%;"/></td>
+  </tr>
+</table>
+
 The distance reward is calculated as:
 
 $$d = \|p_e - p_b\|_2$$
